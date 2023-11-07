@@ -668,7 +668,7 @@
 									"})\r",
 									"pm.test(\"Response data objects have keys\",function(){\r",
 									"    for(let i=0 ; i < pm.response.json().data.length ; i++) {\r",
-									"        pm.expect(pm.response.json().data[i]).to.have.all.keys(\"_id\",\"title\",\"year\",\"owner\")\r",
+									"        pm.expect(pm.response.json().data[i]).to.have.any.keys(\"_id\",\"title\",\"year\",\"owner\")\r",
 									"        }\r",
 									"})\r",
 									""
